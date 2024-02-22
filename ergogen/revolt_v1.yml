@@ -1,41 +1,70 @@
+units:
+  # Proxy Spacing Variables
+  # kx: cx
+  # ky: cy
+  # Padding Variables
+  # px: kx + 2
+  # py: ky + 2
+  # tenth of an inch
+  dec: 2.54
+  ring_stagger: dec * 2
+  middle_stagger: dec
+  index_stagger: -dec
+  inner_stagger: -dec
 points:
   zones:
     matrix:
-      anchor:
-        rotate: 5
       columns:
+        outer:
         pinky:
         ring:
-          key.splay: 5
-          key.origin: [-12, -19]
-          key.stagger: 12
+          key:
+            stagger: ring_stagger
         middle:
-          key.stagger: 5
+          key:
+            stagger: middle_stagger
         index:
-          key.stagger: -6
+          key:
+            stagger: index_stagger
+          rows.mod.skip: true
         inner:
-          key.stagger: -2
+          key:
+            stagger: inner_stagger
+          rows.mod.skip: true
       rows:
+        mod:
         bottom:
         home:
         top:
-    thumbfan:
+        num:
+    bonus:
+      anchor:
+        ref: matrix_inner_home
+        shift: [1u, -dec]
+      columns:
+        bonus:
+      rows:
+        home:
+        top:
+    alt:
+      anchor:
+        ref: matrix_index_mod 
+      columns:
+        alt:
+          rows.alt:
+            shift: [dec * 2.5, -dec * 1]
+            rotate: -10
+      rows:
+        alt:
+    thumb:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-7, -19]
+        shift: [14, -23]
+        rotate: -30
       columns:
-        near:
-        home:
-          key.spread: 21.25
-          key.splay: -28
-          key.origin: [-11.75, -9]
-        far:
-          key.spread: 21.25
-          key.splay: -28
-          key.origin: [-9.5, -9]
+        default:
+        inner:
+          rows.top.skip: true
       rows:
-        thumb:
-  rotate: -20
-  mirror:
-    ref: matrix_pinky_home
-    distance: 223.7529778
+        home:
+        top:
