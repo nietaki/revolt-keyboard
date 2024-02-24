@@ -1,16 +1,25 @@
 units:
-  # Proxy Spacing Variables
-  # kx: cx
-  # ky: cy
-  # Padding Variables
-  # px: kx + 2
-  # py: ky + 2
+  # choc spacing is usually 18x17mm
+  # vertical spacing, center to center
+  # 17.526 = 6.9 * 2.54, leaving about 0.9mm spacig between keycaps
+  py: 17.526
+  $default_padding: 17.526
+  # 18.542 = 7.3 * 2.54
+  px: 18.542
+  $default_spread: 18.542
+
+  $default_width: 18
+  $default_height: 17
+  # Once a point within a column is determined, 
+  # padding represents the vertical gap between it and the next row. 
+  
   # tenth of an inch
   dec: 2.54
-  ring_stagger: dec * 2
+  ring_stagger: dec * 3
   middle_stagger: dec
   index_stagger: -dec
-  inner_stagger: -dec
+  # redox had 1.905mm, 0.6 * dec = 1.524, 0.7 ~ 1.778
+  inner_stagger: -dec * 0.7
 points:
   zones:
     matrix:
@@ -40,7 +49,7 @@ points:
     bonus:
       anchor:
         ref: matrix_inner_home
-        shift: [1u, -dec]
+        shift: [px, -dec * 0.8]
       columns:
         bonus:
       rows:
@@ -52,14 +61,14 @@ points:
       columns:
         alt:
           rows.alt:
-            shift: [dec * 2.5, -dec * 1]
-            rotate: -10
+            shift: [dec * 2.4, -dec * 0.9]
+            rotate: -7
       rows:
         alt:
     thumb:
       anchor:
         ref: matrix_inner_bottom
-        shift: [14, -23]
+        shift: [dec * 5.1, -dec * 8.3]
         rotate: -30
       columns:
         default:
@@ -68,3 +77,10 @@ points:
       rows:
         home:
         top:
+
+# pcbs:
+#   left_part:
+#     outlines:
+#       -outline: required
+#     footprints:
+
