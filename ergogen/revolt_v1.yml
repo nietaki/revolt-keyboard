@@ -19,7 +19,8 @@ units:
   middle_stagger: dec
   index_stagger: -dec
   # redox had 1.905mm, 0.6 * dec = 1.524, 0.7 ~ 1.778
-  inner_stagger: -dec * 0.7
+  inner_stagger: -dec
+  screwhead_radius: 5.8 / 2
 points:
   zones:
     matrix:
@@ -49,7 +50,7 @@ points:
     bonus:
       anchor:
         ref: matrix_inner_home
-        shift: [px, -dec * 0.8]
+        shift: [px, -dec * 1.1]
       columns:
         bonus:
       rows:
@@ -61,14 +62,14 @@ points:
       columns:
         alt:
           rows.alt:
-            shift: [dec * 2.4, -dec * 0.9]
-            rotate: -7
+            shift: [dec * 2.4, -dec]
+            rotate: -6
       rows:
         alt:
     thumb:
       anchor:
         ref: matrix_inner_bottom
-        shift: [dec * 5.1, -dec * 8.3]
+        shift: [dec * 5.2, -dec * 8.5]
         rotate: -30
       columns:
         default:
@@ -77,10 +78,88 @@ points:
       rows:
         home:
         top:
+outlines:
+  keys:
+    - what: rectangle
+      where: true
+      size: [18, 17]
+  connector:
+    - what: rectangle
+      adjust.shift: [3, 0.5 * 17 + 1 + 24 * 0.5]
+      adjust.rotate: 30 * 0
+      size: [9.1, 24]
+      where:
+        ref: bonus_bonus_top
+     
+  screwhead:
+    - what: circle
+      radius: screwhead_radius
+      adjust.shift: [px - 6, 10]
+      where:
+        ref: matrix_inner_num
+  screwhead2:
+    - what: circle
+      radius: screwhead_radius
+      adjust.shift: [-5, -14]
+      where:
+        ref: matrix_middle_mod
+  screwhead3:
+    - what: circle
+      radius: screwhead_radius
+      adjust.shift: [14, -3]
+      where:
+        ref: thumb_default_top
+  screwhead4:
+    - what: circle
+      radius: screwhead_radius
+      adjust.shift: [4, 13]
+      where:
+        ref: matrix_pinky_num
+  board:
+    - what: polygon
+      bound: true
+      # operation: stack
+      points:
+        - ref: matrix_outer_mod
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_outer_num
+          shift: [-0.5px, 0.5py]
+        # top left kink
+        - ref: matrix_middle_num
+          shift: [-1.5px - 2dec, 0.5py]
+        - ref: matrix_middle_num
+          shift: [ 3 * px + 0.5px, 0.5py]
+        - ref: bonus_bonus_home
+          shift: [0.5px, -0.5py]
+        #- ref: thumb_default_top
+        #  shift: [0px, 0.5py]
+        - ref: thumb_default_top
+          shift: [0.5px, 0.5py]
+        - ref: thumb_inner_home
+          shift: [0.5px, +0.5py]
+        - ref: thumb_inner_home
+          shift: [0.5px, -0.5py]
+        # bottom kink
+        - ref: matrix_outer_mod
+          shift: [4px + 1px, -0.5py]
+        #- ref: matrix_outer_mod
+        #  shift: [3px + 1px, -0.5py]
+  board_fillet:
+    - what: outline
+      name: board
+      fillet: 2
 
-# pcbs:
-#   left_part:
-#     outlines:
-#       -outline: required
-#     footprints:
-
+  combo:
+    - name: board_fillet
+    - operation: stack
+      name: keys
+    - operation: stack
+      name: connector
+    - operation: stack
+      name: screwhead
+    - operation: stack
+      name: screwhead2
+    - operation: stack
+      name: screwhead3
+    - operation: stack
+      name: screwhead4
