@@ -28,29 +28,42 @@ units:
 points:
   zones:
     matrix:
+      anchor:
+        shift: [100, -100]
       columns:
         outer:
+          key.column_net: col_1
         pinky:
+          key.column_net: col_2
         ring:
           key:
             stagger: ring_stagger
+            column_net: col_3
         middle:
           key:
             stagger: middle_stagger
+            column_net: col_4
         index:
           key:
             stagger: index_stagger
+            column_net: col_5
           rows.mod.skip: true
         inner:
           key:
             stagger: inner_stagger
+            column_net: col_6
           rows.mod.skip: true
       rows:
         mod:
+          row_net: row_5
         bottom:
+          row_net: row_4
         home:
+          row_net: row_3
         top:
+          row_net: row_2
         num:
+          row_net: row_1
     bonus:
       anchor:
         ref: matrix_inner_home
@@ -167,3 +180,27 @@ outlines:
       name: screwhead3
     - operation: stack
       name: screwhead4
+
+pcbs:
+  left:
+    outlines:
+      main:
+        outline: board_fillet
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: false
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -2dec]
