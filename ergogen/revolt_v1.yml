@@ -15,6 +15,7 @@ units:
   
   # tenth of an inch
   dec: 2.54
+  mil: dec / 100
   ring_stagger: dec * 3
   middle_stagger: dec
   index_stagger: -dec
@@ -29,68 +30,85 @@ points:
   zones:
     matrix:
       anchor:
-        shift: [100, -100]
+        shift: [40 * dec, -60 * dec]
       columns:
         outer:
-          key.column_net: col_1
+          key.column_net: COL0
+          rows.mod.tags: custom_diode_right
         pinky:
-          key.column_net: col_2
+          key.column_net: COL1
+          rows.mod.tags: custom_diode_right
         ring:
           key:
             stagger: ring_stagger
-            column_net: col_3
+            column_net: COL2
         middle:
           key:
             stagger: middle_stagger
-            column_net: col_4
+            column_net: COL3
+          rows.mod.tags: custom_diode_right
         index:
           key:
             stagger: index_stagger
-            column_net: col_5
+            column_net: COL4
           rows.mod.skip: true
         inner:
           key:
             stagger: inner_stagger
-            column_net: col_6
+            column_net: COL5
           rows.mod.skip: true
       rows:
         mod:
-          row_net: row_5
+          row_net: ROW4
         bottom:
-          row_net: row_4
+          row_net: ROW3
         home:
-          row_net: row_3
+          row_net: ROW2
         top:
-          row_net: row_2
+          row_net: ROW1
         num:
-          row_net: row_1
+          row_net: ROW0
     bonus:
       anchor:
         ref: matrix_inner_home
         shift: [px, -dec * 1]
       columns:
         bonus:
+          key.column_net: COL6
       rows:
         home:
+          row_net: ROW2
         top:
+          row_net: ROW1
     alt:
       anchor:
         ref: matrix_index_mod 
       columns:
-        alt:
-          rows.alt:
+        index:
+          key.column_net: COL4
+          rows.mod:
             shift: [dec * 2.4, -dec]
             rotate: -6
+            tags: custom_diode_left
       rows:
-        alt:
+        mod:
+          row_net: ROW4
     thumb:
       anchor:
         ref: matrix_inner_bottom
         shift: [dec * 5.2, -dec * 8.4]
         rotate: -30
       columns:
-        default:
-        inner:
+        close:
+          rows.top.row_net: ROW3
+          rows.top.column_net: COL6
+          rows.home.row_net: ROW4
+          rows.home.column_net: COL5
+          rows.home.tags: custom_diode_left
+        far:
+          rows.home.row_net: ROW4
+          rows.home.column_net: COL6
+          rows.home.tags: custom_diode_left
           rows.top.skip: true
       rows:
         home:
@@ -125,7 +143,7 @@ outlines:
       radius: screwhead_radius
       adjust.shift: [14, -3]
       where:
-        ref: thumb_default_top
+        ref: thumb_close_top
   screwhead4: # top left
     - what: circle
       radius: screwhead_radius
@@ -148,13 +166,13 @@ outlines:
           shift: [ 3 * px + 0.5px, 0.5py + extra_top_space]
         - ref: bonus_bonus_home
           shift: [0.5px, -0.5py]
-        #- ref: thumb_default_top
+        #- ref: thumb_close_top
         #  shift: [0px, 0.5py]
-        - ref: thumb_default_top
+        - ref: thumb_close_top
           shift: [0.5px, 0.5py]
-        - ref: thumb_inner_home
+        - ref: thumb_far_home
           shift: [0.5px, +0.5py]
-        - ref: thumb_inner_home
+        - ref: thumb_far_home
           shift: [0.5px, -0.5py]
         # bottom kink
         - ref: matrix_outer_mod
@@ -191,16 +209,35 @@ pcbs:
         what: choc
         where: true
         params:
-          keycaps: true
-          reverse: false
+          keycaps: false
+          reverse: true
           hotswap: false
           from: "{{column_net}}"
           to: "{{colrow}}"
-      diode:
+      default_diode:
         what: diode
-        where: true
+        where: meta.tags ~ -/custom_diode/
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -2dec]
+          shift: [0, -345 * mil]
+          rotate: 180
+      right_diode:
+        what: diode
+        where: meta.tags ~ /custom_diode_right/
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [350 * mil, -85 * mil]
+          rotate: 90
+      left_diode:
+        what: diode
+        where: meta.tags ~ /custom_diode_left/
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [-350 * mil, -85 * mil]
+          rotate: 90
