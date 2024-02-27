@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] ERC, DRC rules from JLC
+- [x] ERC, DRC rules from JLC
 - [ ] add extra space on left and right to facilitate hotswap sockets in the future
 - [ ] move the rotated diodes for the same reason
 - [ ] relative path footprint library for portable projects
@@ -25,3 +25,12 @@
 7. Update the schematic from the pcb band the other way until stuff is consistent.
 8. ...
 8. Draw the rest of the owl
+
+## Special thanks
+
+Projects that helped or inspired me:
+
+- https://github.com/mattdibi/redox-keyboard
+- https://flatfootfox.com/ergogen-introduction/
+- https://github.com/labtroll/KiCad-DesignRules/tree/main
+- https://docs.ergogen.xyz/
