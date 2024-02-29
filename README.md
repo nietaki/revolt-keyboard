@@ -3,13 +3,14 @@
 ## TODO
 
 - [x] ERC, DRC rules from JLC
+- [x] relative path footprint library for portable projects
+- [x] reversible IDC14 connector footprint
+- [x] dimension check for connector
 - [ ] add extra space on left and right to facilitate hotswap sockets in the future
 - [ ] move the rotated diodes for the same reason
-- [ ] relative path footprint library for portable projects
-- [ ] reversible IDC14 connector footprint
 - [ ] LEDs in the schematic
 - [ ] port the manifesto to the repo
-- [ ] open source the repo
+- [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
 
 ## Workflow
 
@@ -31,6 +32,7 @@
 Projects that helped or inspired me:
 
 - https://github.com/mattdibi/redox-keyboard
+- https://github.com/daprice/keyswitches.pretty/ - adapted some footprints from this brilliant library
 - https://flatfootfox.com/ergogen-introduction/
 - https://github.com/labtroll/KiCad-DesignRules/tree/main
 - https://docs.ergogen.xyz/

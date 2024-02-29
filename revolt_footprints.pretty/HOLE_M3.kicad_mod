@@ -1,0 +1,18 @@
+(footprint "HOLE_M3" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "HOLE_M3" (at 0 -4.5) (layer "F.SilkS") hide
+      (effects (font (size 1.524 1.524) (thickness 0.3048)))
+    (tstamp 1afc3626-6411-441f-9c9e-668774185e4c)
+  )
+  (fp_text value "VAL**" (at 0.05 -7.25) (layer "F.SilkS") hide
+      (effects (font (size 1.524 1.524) (thickness 0.3048)))
+    (tstamp c126e368-9212-46e9-83f0-e3b7389cdb13)
+  )
+  (fp_circle (center 0 0) (end 4.5 0)
+    (stroke (width 0.05) (type dot)) (fill none) (layer "Cmts.User") (tstamp fefd1fc5-3ddd-4a69-8a4b-5af577e44bbc))
+  (fp_circle (center 0 0) (end 3 0)
+    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp 83196a88-350f-4f31-a698-bfa7489b6770))
+  (pad "1" thru_hole circle (at 0 0) (size 4 4) (drill 3.2) (layers "*.Cu" "*.Mask" "F.SilkS")
+    (clearance 1.2) (tstamp aa30cfec-1fc9-42e8-ba83-b989f30a81e7))
+)
