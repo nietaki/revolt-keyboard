@@ -6,9 +6,11 @@
 - [x] relative path footprint library for portable projects
 - [x] reversible IDC14 connector footprint
 - [x] dimension check for connector
-- [ ] add extra space on left and right to facilitate hotswap sockets in the future
-- [ ] move the rotated diodes for the same reason
+- [x] add extra space on left and right to facilitate hotswap sockets in the future (30 mil)
+- [x] move the rotated diodes for the same reason (200 mil up + 180 deg)
 - [ ] LEDs in the schematic
+- [ ] solder joint VCC connectors for LEDs
+- [ ] add the missing info to the manifesto
 - [ ] port the manifesto to the repo
 - [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
 

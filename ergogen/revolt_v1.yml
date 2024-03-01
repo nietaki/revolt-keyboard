@@ -24,7 +24,9 @@ units:
   screwhead_radius: 5.8 / 2
   extra_top_space: dec
   extra_bottom_space: 0
-  connector_width: 9.9
+  extra_left_space: 30 * mil
+  extra_right_space: 30 * mil
+  connector_width: 450 * mil 
   connector_height: 26.440
 points:
   zones:
@@ -129,7 +131,7 @@ outlines:
   screwhead:
     - what: circle
       radius: screwhead_radius
-      adjust.shift: [13, 11]
+      adjust.shift: [12, 11]
       where:
         ref: matrix_inner_num
   screwhead2: # bottom left
@@ -155,25 +157,27 @@ outlines:
       bound: true
       # operation: stack
       points:
+        # bottom left
         - ref: matrix_outer_mod
-          shift: [-0.5px, -0.5py - extra_bottom_space]
+          shift: [-0.5px - extra_left_space, -0.5py - extra_bottom_space]
+        # top left
         - ref: matrix_outer_num
-          shift: [-0.5px, 0.5py]
+          shift: [-0.5px - extra_left_space, 0.5py]
         # top left kink
         - ref: matrix_middle_num
           shift: [-1.5px - 2dec, 0.5py + extra_top_space]
         - ref: matrix_middle_num
-          shift: [ 3 * px + 0.5px, 0.5py + extra_top_space]
+          shift: [ 3 * px + 0.5px + extra_right_space, 0.5py + extra_top_space]
         - ref: bonus_bonus_home
-          shift: [0.5px, -0.5py]
+          shift: [0.5px + extra_right_space, -0.5py]
         #- ref: thumb_close_top
         #  shift: [0px, 0.5py]
         - ref: thumb_close_top
           shift: [0.5px, 0.5py]
         - ref: thumb_far_home
-          shift: [0.5px, +0.5py]
+          shift: [0.5px + extra_right_space, +0.5py]
         - ref: thumb_far_home
-          shift: [0.5px, -0.5py]
+          shift: [0.5px + extra_right_space, -0.5py]
         # bottom kink
         - ref: matrix_outer_mod
           shift: [4px + 1px, -0.5py - extra_bottom_space]
@@ -230,8 +234,8 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [350 * mil, -85 * mil]
-          rotate: 90
+          shift: [350 * mil, 115 * mil]
+          rotate: -90
       left_diode:
         what: diode
         where: meta.tags ~ /custom_diode_left/
@@ -239,5 +243,5 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [-350 * mil, -85 * mil]
-          rotate: 90
+          shift: [-350 * mil, 115 * mil]
+          rotate: -90
