@@ -64,7 +64,7 @@
   (fp_line (start 7 7) (end 6 7)
     (stroke (width 0.15) (type solid)) (layer "F.SilkS") (tstamp c7abc023-bcb8-40bf-a7c9-58cc3a273cfd))
   (fp_rect (start -8.8 -8.35) (end 8.8 8.35)
-    (stroke (width 0.1) (type dot)) (fill none) (layer "Cmts.User") (tstamp dcd58dbb-b172-4223-abbe-86e283a919f8))
+    (stroke (width 0.1) (type dash)) (fill none) (layer "Cmts.User") (tstamp dcd58dbb-b172-4223-abbe-86e283a919f8))
   (fp_line (start -6.9 6.9) (end -6.9 -6.9)
     (stroke (width 0.15) (type solid)) (layer "Eco2.User") (tstamp 7d97f4ba-15e8-47c9-a836-6faa4e83a725))
   (fp_line (start -6.9 6.9) (end 6.9 6.9)

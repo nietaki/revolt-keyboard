@@ -8,6 +8,7 @@
 - [x] dimension check for connector
 - [x] add extra space on left and right to facilitate hotswap sockets in the future (30 mil)
 - [x] move the rotated diodes for the same reason (200 mil up + 180 deg)
+- [ ] finalize the base pcb design
 - [ ] LEDs in the schematic
 - [ ] solder joint VCC connectors for LEDs
 - [ ] add the missing info to the manifesto

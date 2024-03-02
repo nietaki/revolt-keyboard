@@ -89,7 +89,7 @@ points:
         index:
           key.column_net: COL4
           rows.mod:
-            shift: [dec * 2.4, -dec]
+            shift: [dec * 2.2, -dec]
             rotate: -6
             tags: custom_diode_left
       rows:
@@ -180,7 +180,7 @@ outlines:
           shift: [0.5px + extra_right_space, -0.5py]
         # bottom kink
         - ref: matrix_outer_mod
-          shift: [4px + 1px, -0.5py - extra_bottom_space]
+          shift: [4px - 0px, -0.5py - extra_bottom_space]
         #- ref: matrix_outer_mod
         #  shift: [3px + 1px, -0.5py]
   board_fillet:
