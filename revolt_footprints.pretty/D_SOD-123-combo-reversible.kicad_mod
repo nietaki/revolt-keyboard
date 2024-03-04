@@ -3,7 +3,7 @@
   (descr "SOD-123")
   (tags "SOD-123")
   (attr smd)
-  (fp_text reference "REF**" (at 0 -2) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 6.985 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp b1ea8640-8ad2-462f-9bf9-a9df50b85d88)
   )
