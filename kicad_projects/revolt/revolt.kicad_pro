@@ -421,9 +421,26 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.3,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.3,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -434,192 +451,16 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": ""
+        "netclass": "Power",
+        "pattern": "V5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
       },
       {
         "netclass": "Default",
-        "pattern": "COL0"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_mod"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "outer_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "COL1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_mod"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "pinky_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "COL2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_mod"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ring_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "COL3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_mod"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "middle_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "COL4"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "COL5"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_bottom"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "inner_num"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "COL6"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "bonus_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "bonus_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "index_mod"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "close_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "close_top"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "far_home"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ROW3"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ROW2"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ROW1"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ROW0"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "ROW4"
+        "pattern": "Net-(D10*-K)"
       }
     ]
   },

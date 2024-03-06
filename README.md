@@ -8,12 +8,14 @@
 - [x] dimension check for connector
 - [x] add extra space on left and right to facilitate hotswap sockets in the future (30 mil)
 - [x] move the rotated diodes for the same reason (200 mil up + 180 deg)
-- [ ] finalize the base pcb design
-- [ ] LEDs in the schematic
-- [ ] solder joint VCC connectors for LEDs
+- [x] finalize the base pcb design
+- [x] LEDs in the schematic
+- [ ] combo SMD + THT resistor footprints for LED current limiting resistors (base on some standard THT ones)
+- [ ] add mounting holes
 - [ ] add the missing info to the manifesto
 - [ ] port the manifesto to the repo
 - [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
+- [ ] route the board
 
 ## Workflow
 
