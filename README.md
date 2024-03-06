@@ -10,8 +10,9 @@
 - [x] move the rotated diodes for the same reason (200 mil up + 180 deg)
 - [x] finalize the base pcb design
 - [x] LEDs in the schematic
-- [ ] combo SMD + THT resistor footprints for LED current limiting resistors (base on some standard THT ones)
-- [ ] add mounting holes
+- [x] combo SMD + THT resistor footprints for LED current limiting resistors (base on some standard THT ones)
+  - actually doing SMD instead, THT is too big
+- [x] add mounting holes
 - [ ] add the missing info to the manifesto
 - [ ] port the manifesto to the repo
 - [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
