@@ -459,7 +459,7 @@
         "pattern": "GND"
       },
       {
-        "netclass": "Default",
+        "netclass": "Power",
         "pattern": "Net-(D10*-K)"
       }
     ]
