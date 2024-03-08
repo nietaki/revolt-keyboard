@@ -16,7 +16,7 @@
 - [ ] add the missing info to the manifesto
 - [ ] port the manifesto to the repo
 - [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
-- [ ] route the board
+- [x] route the board
 
 ## Workflow
 
