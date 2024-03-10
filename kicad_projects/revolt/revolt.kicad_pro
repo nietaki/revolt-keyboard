@@ -461,6 +461,10 @@
       {
         "netclass": "Power",
         "pattern": "Net-(D10*-K)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "5V"
       }
     ]
   },

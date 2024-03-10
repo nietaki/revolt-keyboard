@@ -23,11 +23,11 @@
 ### Commander PCB
 
 - [x] general design with the experimental connectors
-- [ ] nets from the input PCBs
-- [ ] nets from the Pico/connector docs
-- [ ] copy the DRC rules
-- [ ] route
-- [ ] confirm the 5V5 source pin
+- [x] nets from the input PCBs
+- [x] nets from the Pico/connector docs
+- [x] copy the DRC rules
+- [x] route
+- [x] confirm the 5V5 source pin
 - [ ] add the silkscreen info
 
 ## Workflow
