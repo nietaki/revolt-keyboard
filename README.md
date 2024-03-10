@@ -2,6 +2,8 @@
 
 ## TODO
 
+### Input PCB
+
 - [x] ERC, DRC rules from JLC
 - [x] relative path footprint library for portable projects
 - [x] reversible IDC14 connector footprint
@@ -17,6 +19,16 @@
 - [ ] port the manifesto to the repo
 - [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
 - [x] route the board
+
+### Commander PCB
+
+- [x] general design with the experimental connectors
+- [ ] nets from the input PCBs
+- [ ] nets from the Pico/connector docs
+- [ ] copy the DRC rules
+- [ ] route
+- [ ] confirm the 5V5 source pin
+- [ ] add the silkscreen info
 
 ## Workflow
 
@@ -42,3 +54,4 @@ Projects that helped or inspired me:
 - https://flatfootfox.com/ergogen-introduction/
 - https://github.com/labtroll/KiCad-DesignRules/tree/main
 - https://docs.ergogen.xyz/
+- https://github.com/sol/KiCad-RP-Pico
