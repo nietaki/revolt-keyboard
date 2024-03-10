@@ -28,7 +28,7 @@
 - [x] copy the DRC rules
 - [x] route
 - [x] confirm the 5V5 source pin
-- [ ] add the silkscreen info
+- [x] add the silkscreen info
 
 ## Workflow
 
