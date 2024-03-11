@@ -1,4 +1,43 @@
-# revolt-keyboard
+# Revolt Keyboard
+
+> **Revolt** - a split ergonomic keyboard prioritising ease of adoption, flexibilty, easy build+repair, and partial upgrades
+> 
+
+## Why call it “Revolt”?
+
+1. It’s heavily inspired by [Redox](https://github.com/mattdibi/redox-keyboard), an amazing open-source keyboard, that is still my daily driver
+2. It’s revolting against the popular design philosophy of keybords like Sofle, Lily58 or Corne, which prioritise a compact footprint over other qualities
+3. Some might find it “revolting”, since its looks are secondary to its features
+
+More info on the design philosophy behind revolt in the [Revolt Manifesto](./Revolt_Manifesto.md)
+
+## TL;DR
+
+It’s (going to be) a 68 key, wired, choc-based split ergonomic keyboard running QMK. Instead of being split into 2 halves, it’s split into 3 parts: left input, right input and the center one called “commander”
+
+![revolt idea.png](./images/revolt_idea.png)
+
+![input board](./images/3d_revolt_0_9.png)
+
+![commander board](./images/3d_revolt_commander_0_9.png)
+
+The left and right input parts are “dumb”, and contain only the switches and diodes to make 7x5 matrix work, plus optional LEDs under home keys.
+
+The case will be made with low profile + tenting in mind (with multiple tenting angles possible), with two versions: for soldered switches without a top plate and hotswap with a top plate.
+
+The commander board should lend itself to experimenting with different pointing devices. The first iteration has connectors for an [Azoteq TPS43 touchpad](https://www.digikey.com/en/products/detail/azoteq-pty-ltd/TPS43-201A-S/7164940?s=N4IgTCBcDaIC4AcDOAWAzCAugXyA) and a PSP 3000 joystick. It should be easy to create versions that support other pointing devises, like a trackball, a Cirque touchpad or other joysticks.
+
+## FAQ
+
+### Why do you hate Sofle/Lily58/Corne?
+
+I don’t! They’re beautiful keyboards, designed with love and forethought, all of them with passionate communities. They just don’t fit the criteria of what I’m looking for in an ergonomic keyboard that can be used just as easily for programming and gaming, especially for people coming from “regular” keyboards. I wanted to make a keyboard that’s perfect for me and other like-minded people.
+
+### No wireless version?
+
+I’m not ruling out a wireless version in the future. I’d like to perfect the wired version to my liking and see what kinds of compromises make sense.
+
+But with Revolt being open source, there’s no reason for anyone interested not to take a crack at it themselves.
 
 ## TODO
 
