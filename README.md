@@ -41,33 +41,14 @@ But with Revolt being open source, there’s no reason for anyone interested not
 
 ## TODO
 
-### Input PCB
-
-- [x] ERC, DRC rules from JLC
-- [x] relative path footprint library for portable projects
-- [x] reversible IDC14 connector footprint
-- [x] dimension check for connector
-- [x] add extra space on left and right to facilitate hotswap sockets in the future (30 mil)
-- [x] move the rotated diodes for the same reason (200 mil up + 180 deg)
-- [x] finalize the base pcb design
-- [x] LEDs in the schematic
-- [x] combo SMD + THT resistor footprints for LED current limiting resistors (base on some standard THT ones)
-  - actually doing SMD instead, THT is too big
-- [x] add mounting holes
-- [ ] add the missing info to the manifesto
-- [ ] port the manifesto to the repo
-- [ ] open source the repo (license: https://creativecommons.org/licenses/by-sa/4.0/ I guess, because of the footprints)
-- [x] route the board
-
-### Commander PCB
-
-- [x] general design with the experimental connectors
-- [x] nets from the input PCBs
-- [x] nets from the Pico/connector docs
-- [x] copy the DRC rules
-- [x] route
-- [x] confirm the 5V5 source pin
-- [x] add the silkscreen info
+- [x] add the license
+- [ ] prepare the BOM
+- [ ] order the parts
+- [ ] order the PCBs
+- [ ] POC QMK firmware
+- [ ] Solder the POC keyboard
+- [ ] Design and print the case
+- [ ] Document the plan for the different variants of Revolt
 
 ## Workflow
 
@@ -94,3 +75,9 @@ Projects that helped or inspired me:
 - https://github.com/labtroll/KiCad-DesignRules/tree/main
 - https://docs.ergogen.xyz/
 - https://github.com/sol/KiCad-RP-Pico
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+
+[Revolt Keyboard](https://github.com/nietaki/revolt-keyboard)© 2024 by [@nietaki](https://nietaki.com/) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
