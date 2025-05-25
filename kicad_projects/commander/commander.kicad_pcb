@@ -2572,7 +2572,7 @@
 			)
 		)
 		(property "Footprint" "revolt_footprints:CON_522710469_MOL"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fe9fd371-34cf-4490-931b-8194db62bd24")
@@ -2584,7 +2584,7 @@
 			)
 		)
 		(property "Datasheet" "522710469"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e2658c14-6136-4550-b0d5-f64426ccd98f")
@@ -2596,7 +2596,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb0dd4c7-e017-49bd-82e3-63ac8789f3af")
@@ -7789,6 +7789,17 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(gr_rect
+		(start 109.7 117)
+		(end 159.7 139)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill none)
+		(layer "Eco1.User")
+		(uuid "13a1759f-3f76-4c7b-9662-e617eaa362a2")
 	)
 	(gr_arc
 		(start 107 62)
