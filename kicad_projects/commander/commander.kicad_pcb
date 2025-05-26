@@ -1154,7 +1154,7 @@
 		(descr "Kailh \"Choc\" PG1350 keyswitch with optional socket mount")
 		(tags "kailh,choc")
 		(property "Reference" "SW2"
-			(at 0 -8.255 360)
+			(at 0 -8.255 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "aed3c2e1-96e5-49f4-924f-061efd00f81d")
@@ -1166,7 +1166,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 0 8.25 360)
+			(at 0 8.25 0)
 			(layer "F.Fab")
 			(uuid "bc35fccf-f18a-4d45-9a40-80572590acac")
 			(effects
@@ -1177,7 +1177,7 @@
 			)
 		)
 		(property "Footprint" "keyswitches:Kailh_socket_PG1350_optional"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6a35faf2-9466-486f-9f10-bbab205baf14")
@@ -1189,7 +1189,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6409e787-0eb2-4d68-b70d-22369e78ca36")
@@ -1201,7 +1201,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "38115ef7-a110-4e90-b240-7903409e40f5")
@@ -1741,7 +1741,7 @@
 			(uuid "072b554c-1050-48b6-b6e5-4b2fc3fa05bb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 4.445 -7.62 360)
+			(at 4.445 -7.62 0)
 			(layer "B.SilkS")
 			(uuid "23a36a15-850a-4f5a-8b12-421547c7d743")
 			(effects
@@ -1753,7 +1753,7 @@
 			)
 		)
 		(fp_text user "${VALUE}"
-			(at 2.54 -0.635 360)
+			(at 2.54 -0.635 0)
 			(layer "B.Fab")
 			(uuid "033bec1a-7050-4df5-a285-af00e1c41b5a")
 			(effects
@@ -1765,7 +1765,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3 -5 360)
+			(at 3 -5 0)
 			(layer "B.Fab")
 			(uuid "905565fe-dbca-4a94-9c69-a7323a238f5f")
 			(effects
@@ -1777,7 +1777,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "49bcec69-4489-4484-8278-f267b7897ef6")
 			(effects
@@ -3509,7 +3509,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP3"
-			(at 0 1.8 360)
+			(at 0 1.8 0)
 			(layer "B.SilkS")
 			(uuid "9a74e8e2-8a33-4f3b-b77b-2c580bfa7d46")
 			(effects
@@ -3521,7 +3521,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 0 -1.9 360)
+			(at 0 -1.9 0)
 			(layer "B.Fab")
 			(uuid "a9ef6cfa-199b-4ad5-88c2-f4fb901c8a1a")
 			(effects
@@ -3866,6 +3866,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C17513"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1120d0d5-3d08-4dae-8c27-6d0497778066")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -4370,6 +4384,20 @@
 				(justify mirror)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8c34c98a-47a4-48dd-a25a-a102b0c860e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/a9351c6f-a9b3-43de-834d-2ace38423917")
 		(sheetname "Root")
@@ -4524,7 +4552,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP2"
-			(at 0 1.8 360)
+			(at 0 1.8 0)
 			(layer "B.SilkS")
 			(uuid "89a4bb5f-32ad-4037-bdff-c92f301cb75d")
 			(effects
@@ -4536,7 +4564,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 0 -1.9 360)
+			(at 0 -1.9 0)
 			(layer "B.Fab")
 			(uuid "cdf1be92-eccd-4b5d-b2c7-9d282eda7db2")
 			(effects
@@ -4824,7 +4852,7 @@
 		(descr "Through hole straight pin header, 2x01, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x01 2.54mm double row")
 		(property "Reference" "J13"
-			(at -3.297 0 360)
+			(at -3.297 0 0)
 			(layer "B.SilkS")
 			(uuid "197541c0-acb0-4be0-b5d0-02b122f64aca")
 			(effects
@@ -4836,7 +4864,7 @@
 			)
 		)
 		(property "Value" "Conn_02x01"
-			(at 1.27 -2.33 360)
+			(at 1.27 -2.33 0)
 			(layer "B.Fab")
 			(uuid "91901c60-0529-4f03-a017-81106cc48838")
 			(effects
@@ -7354,7 +7382,7 @@
 		(descr "Through hole straight pin header, 2x01, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x01 2.54mm double row")
 		(property "Reference" "J11"
-			(at -3.297 0 360)
+			(at -3.297 0 0)
 			(layer "B.SilkS")
 			(uuid "e18e2826-a82a-4b3f-ab07-7a12c159f93f")
 			(effects
@@ -7366,7 +7394,7 @@
 			)
 		)
 		(property "Value" "Conn_02x01"
-			(at 1.27 -2.33 360)
+			(at 1.27 -2.33 0)
 			(layer "B.Fab")
 			(uuid "b0227ebd-1cc0-4417-af4b-71f08ad370bd")
 			(effects
@@ -7647,7 +7675,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP5"
-			(at 0 1.8 360)
+			(at 0 1.8 0)
 			(layer "B.SilkS")
 			(uuid "4a81790f-daae-4247-85a4-a4d856e3df85")
 			(effects
@@ -7659,7 +7687,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 0 -1.9 360)
+			(at 0 -1.9 0)
 			(layer "B.Fab")
 			(uuid "01c91e1c-4fe1-46d4-be4e-01a3eac1230f")
 			(effects
@@ -7947,7 +7975,7 @@
 		(descr "Through hole straight pin header, 2x01, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x01 2.54mm double row")
 		(property "Reference" "J12"
-			(at 5.847 0 360)
+			(at 5.847 0 0)
 			(layer "B.SilkS")
 			(uuid "6e9d08a0-18fd-4855-8360-2e3e12ba7043")
 			(effects
@@ -7959,7 +7987,7 @@
 			)
 		)
 		(property "Value" "Conn_02x01"
-			(at 1.27 -2.33 360)
+			(at 1.27 -2.33 0)
 			(layer "B.Fab")
 			(uuid "42f3cee6-22cf-4a35-b79f-0e07e9409c45")
 			(effects
@@ -8880,6 +8908,7 @@
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
 		(zone_connect 1)
+		(attr exclude_from_bom)
 		(fp_line
 			(start -1.4 0.3)
 			(end -1.4 -0.3)
@@ -9084,7 +9113,7 @@
 		(descr "Through hole straight pin header, 2x01, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x01 2.54mm double row")
 		(property "Reference" "J10"
-			(at 5.847 0 360)
+			(at 5.847 0 0)
 			(layer "B.SilkS")
 			(uuid "023a8431-6bd8-488c-90c3-7c87ad5d096a")
 			(effects
@@ -9096,7 +9125,7 @@
 			)
 		)
 		(property "Value" "Conn_02x01"
-			(at 1.27 -2.33 360)
+			(at 1.27 -2.33 0)
 			(layer "B.Fab")
 			(uuid "0d4762f9-6efe-455a-8792-6b4c010bf244")
 			(effects
@@ -9378,7 +9407,7 @@
 			(at 3.7 -0.172 0)
 			(unlocked yes)
 			(layer "B.SilkS")
-			(uuid "5c8fbf09-2646-4919-8e64-1a8590c52b35")
+			(uuid "91d1fd1d-c263-4bd4-bced-6b8dd974c787")
 			(effects
 				(font
 					(size 1 1)
@@ -9387,11 +9416,11 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "522710469"
+		(property "Value" "HC-FPC-05-09-4RLTAG"
 			(at 0 2.8 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "7f3f5158-081d-46ee-ab43-3ed1458748ea")
+			(uuid "ea4d21c8-48be-4098-8f34-2ddba80b9f4b")
 			(effects
 				(font
 					(size 1 1)
@@ -9405,7 +9434,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "6400026e-1376-4d79-98e8-daa2e3e016c0")
+			(uuid "699d5ffa-7447-4fad-8d5b-e53248bdccd0")
 			(effects
 				(font
 					(size 1 1)
@@ -9414,12 +9443,12 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "522710469"
+		(property "Datasheet" "HC-FPC-05-09-4RLTAG"
 			(at 0 3.8 -90)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "a6211bd4-69c7-4081-a6a3-f6e41cbbe57b")
+			(uuid "5280e2c1-d607-40e6-a053-96baa173d3d7")
 			(effects
 				(font
 					(size 1 1)
@@ -9433,7 +9462,21 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c27a8625-4c62-4bc2-b97d-46a3bb756647")
+			(uuid "105af675-3a15-485d-90d7-4993a45ce9a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C5213746"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "62211efd-fcd8-415a-9e46-7053683873f1")
 			(effects
 				(font
 					(size 1 1)
@@ -9455,7 +9498,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "37fa643a-0400-4689-9b0e-09f74391eb3d")
+			(uuid "8d55adb1-8e0d-477b-b86c-422ee14136b1")
 		)
 		(fp_line
 			(start -0.5 -3.1)
@@ -9465,7 +9508,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "fe39dad7-8715-48c8-aee8-bcb6cd63f11b")
+			(uuid "d3c10adb-61a0-472b-83d3-d0083825e268")
 		)
 		(fp_rect
 			(start -1.25 -0.15)
@@ -9476,13 +9519,13 @@
 			)
 			(fill none)
 			(layer "B.SilkS")
-			(uuid "cd014b34-2889-40c0-a04e-1b3859bdf21b")
+			(uuid "1b8c2062-3522-44b3-8834-630743977e92")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 1.3 -90)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "7acdc33a-9fde-4bad-9853-e8232d67260a")
+			(uuid "6571ee2a-1279-4015-bf21-71618d9687d7")
 			(effects
 				(font
 					(size 1 1)
@@ -9500,7 +9543,7 @@
 			(pinfunction "1")
 			(pintype "unspecified")
 			(thermal_bridge_angle 45)
-			(uuid "fed6b279-de18-462f-9e74-b12ea256a7ec")
+			(uuid "7dd9cde6-759f-46b5-95e6-eb5759c9d058")
 		)
 		(pad "2" smd roundrect
 			(at 0.5 0 90)
@@ -9511,7 +9554,7 @@
 			(pinfunction "2")
 			(pintype "unspecified")
 			(thermal_bridge_angle 45)
-			(uuid "05596f39-61e1-4b35-a71f-e3eb7474c952")
+			(uuid "5ec94b61-7249-4785-8d08-d5a9a0c54325")
 		)
 		(pad "3" smd roundrect
 			(at 1 0 90)
@@ -9522,7 +9565,7 @@
 			(pinfunction "3")
 			(pintype "unspecified")
 			(thermal_bridge_angle 45)
-			(uuid "f116eb9a-39e9-477b-aa37-3e269787488c")
+			(uuid "4de30a51-1e6a-4555-b46e-223799151036")
 		)
 		(pad "4" smd roundrect
 			(at 1.5 0 90)
@@ -9533,7 +9576,7 @@
 			(pinfunction "4")
 			(pintype "unspecified")
 			(thermal_bridge_angle 45)
-			(uuid "d4201c97-e1a8-4393-9423-53682008714e")
+			(uuid "db7bef76-2784-4175-9fa8-e2ae43b83e64")
 		)
 		(pad "5" smd roundrect
 			(at -1 -2.5 90)
@@ -9544,7 +9587,7 @@
 			(pinfunction "P1")
 			(pintype "unspecified")
 			(thermal_bridge_angle 45)
-			(uuid "da9ae2e7-36f1-4f5a-8b00-8155bf731af5")
+			(uuid "33ffbe03-ec3f-4e6b-a5b4-bbea15d3d1f2")
 		)
 		(pad "6" smd roundrect
 			(at 2.5 -2.5 90)
@@ -9555,7 +9598,7 @@
 			(pinfunction "P2")
 			(pintype "unspecified")
 			(thermal_bridge_angle 45)
-			(uuid "2e48eefa-e03a-422b-baef-d35d54e53c4c")
+			(uuid "04c426cb-1aa9-4f20-a070-15cf22ea82ac")
 		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23"
@@ -10422,7 +10465,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 2 copper strips")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP4"
-			(at 0 1.8 360)
+			(at 0 1.8 0)
 			(layer "B.SilkS")
 			(uuid "4061b226-4bab-4bbb-90f3-fef3e3505c13")
 			(effects
@@ -10434,7 +10477,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Bridged"
-			(at 0 -1.9 360)
+			(at 0 -1.9 0)
 			(layer "B.Fab")
 			(uuid "9c73a615-ffaa-4a22-9f79-46399b0313d3")
 			(effects
