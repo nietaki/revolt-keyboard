@@ -1,3 +1,6 @@
 [submodule "KiCad-RP-Pico"]
 	path = KiCad-RP-Pico
 	url = https://github.com/nietaki/KiCad-RP-Pico
+[submodule "keyswitches.pretty"]
+	path = keyswitches.pretty
+	url = https://github.com/daprice/keyswitches.pretty/
