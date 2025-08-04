@@ -27,6 +27,27 @@ The case will be made with low profile + tenting in mind (with multiple tenting 
 
 The commander board should lend itself to experimenting with different pointing devices. The first iteration has connectors for an [Azoteq TPS43 touchpad](https://www.digikey.com/en/products/detail/azoteq-pty-ltd/TPS43-201A-S/7164940?s=N4IgTCBcDaIC4AcDOAWAzCAugXyA) and a PSP 3000 joystick. It should be easy to create versions that support other pointing devises, like a trackball, a Cirque touchpad or other joysticks.
 
+## How To...
+
+### ...compile the firmware?
+
+```bash
+$ cd /path/to/qmk_firmware
+$ qmk compile -kb revolt/rev1 -km default
+#  It should generate the firmware file
+$ stat ./revolt_rev1_default.uf2
+```
+### ...flash the firmware?
+
+1. Unplug the commander board
+1. Push the `bootsel` button on the RP2040
+1. While having the button pushed in, connect the commander board to the computer
+
+A virtual drive (?) for the rpi should be discovered by the computer. 
+Drag the compiled firmware file into it. 
+RPi will reboot and run the firmware.
+
+
 ## FAQ
 
 ### Why do you hate Sofle/Lily58/Corne?
