@@ -84,9 +84,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(aux_axis_origin 135 60.1)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x0000800_7ffffffe)
+			(plot_on_all_layers_selection 0x0001000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -98,14 +99,14 @@
 			(plotframeref no)
 			(viasonmask no)
 			(mode 1)
-			(useauxorigin no)
+			(useauxorigin yes)
 			(hpglpennumber 1)
 			(hpglpenspeed 20)
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(dxfpolygonmode yes)
-			(dxfimperialunits yes)
+			(dxfimperialunits no)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
@@ -115,9 +116,9 @@
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 3)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 2)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -2029,7 +2030,7 @@
 		(path "/27437d74-59f7-4d54-9a67-195635b743fb")
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -3580,7 +3581,7 @@
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(net_tie_pad_groups "1, 2")
 		(fp_poly
 			(pts
@@ -4623,7 +4624,7 @@
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(net_tie_pad_groups "1, 2")
 		(fp_poly
 			(pts
@@ -4922,7 +4923,7 @@
 		(path "/c2e038e2-dae1-46ec-aef2-9b67482e2bc3")
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start 3.87 1.33)
 			(end 1.27 1.33)
@@ -7452,7 +7453,7 @@
 		(path "/e264cb98-1c16-4014-8f85-2fbe9b3d99cc")
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start 3.87 1.33)
 			(end 1.27 1.33)
@@ -7746,7 +7747,7 @@
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(net_tie_pad_groups "1, 2")
 		(fp_poly
 			(pts
@@ -8045,7 +8046,7 @@
 		(path "/b45be646-6b0e-4d1e-bc41-63aeb7980b08")
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start 3.87 1.33)
 			(end 1.27 1.33)
@@ -8909,7 +8910,7 @@
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -1.4 0.3)
 			(end -1.4 -0.3)
@@ -9183,7 +9184,7 @@
 		(path "/070460f2-9270-490a-bfbe-280d349e94c7")
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start 3.87 1.33)
 			(end 1.27 1.33)
@@ -10536,7 +10537,7 @@
 		(sheetname "Root")
 		(sheetfile "commander.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom)
+		(attr exclude_from_pos_files exclude_from_bom dnp)
 		(net_tie_pad_groups "1, 2")
 		(fp_poly
 			(pts
