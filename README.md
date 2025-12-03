@@ -1,6 +1,6 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fntkstudio.net%2Fproducts%2Frevolt-keyboard%2F)](https://ntkstudio.net/products/revolt-keyboard/)
 ![GitHub License](https://img.shields.io/github/license/nietaki/revolt-keyboard?color=green)
-[![Discord](https://img.shields.io/discord/1435326750799433919)](https://discord.gg/myEkxF7rhV)
+[ ![Discord](https://img.shields.io/discord/1435326750799433919?logo=discord&color=%235865F2)](https://discord.gg/myEkxF7rhV)
 [![Shopify](https://img.shields.io/badge/Shopify-7AB55C?logo=shopify&logoColor=fff)](https://ntkstudio.net/products/revolt-keyboard/#buy)
 
 # Revolt Keyboard
