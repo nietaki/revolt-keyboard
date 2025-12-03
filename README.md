@@ -11,21 +11,24 @@
 
 More info on the design philosophy behind revolt in the [Revolt Manifesto](./Revolt_Manifesto.md)
 
+
+![final result](./images/main.jpg)
+
 ## TL;DR
 
-It’s (going to be) a 68 key, wired, choc-based split ergonomic keyboard running QMK. Instead of being split into 2 halves, it’s split into 3 parts: left input, right input and the center one called “commander”
+It’s a 68(+3) key, wired, choc-based split ergonomic keyboard running QMK. Instead of being split into 2 halves, it’s split into 3 parts: left input, right input and the center one called “commander”
 
-![revolt idea.png](./images/revolt_idea.png)
 
-![input board](./images/3d_revolt_0_9.png)
+![input board](./images/revolt_3d_render.png)
 
-![commander board](./images/3d_revolt_commander_0_9.png)
+![commander board](./images/commander_3d_render.png)
 
 The left and right input parts are “dumb”, and contain only the switches and diodes to make 7x5 matrix work, plus optional LEDs under home keys.
 
 The case will be made with low profile + tenting in mind (with multiple tenting angles possible), with two versions: for soldered switches without a top plate and hotswap with a top plate.
 
-The commander board should lend itself to experimenting with different pointing devices. The first iteration has connectors for an [Azoteq TPS43 touchpad](https://www.digikey.com/en/products/detail/azoteq-pty-ltd/TPS43-201A-S/7164940?s=N4IgTCBcDaIC4AcDOAWAzCAugXyA) and a PSP 3000 joystick. It should be easy to create versions that support other pointing devises, like a trackball, a Cirque touchpad or other joysticks.
+The commander board should lend itself to experimenting with different pointing devices. 
+Current has connectors for a PSP 3000 joystick. It should be easy to create versions that support other pointing devises, like a trackball, a Cirque touchpad or other joysticks.
 
 ## How To...
 
@@ -59,17 +62,6 @@ I don’t! They’re beautiful keyboards, designed with love and forethought, al
 I’m not ruling out a wireless version in the future. I’d like to perfect the wired version to my liking and see what kinds of compromises make sense.
 
 But with Revolt being open source, there’s no reason for anyone interested not to take a crack at it themselves.
-
-## TODO
-
-- [x] add the license
-- [ ] prepare the BOM
-- [ ] order the parts
-- [ ] order the PCBs
-- [ ] POC QMK firmware
-- [ ] Solder the POC keyboard
-- [ ] Design and print the case
-- [ ] Document the plan for the different variants of Revolt
 
 ## Workflow
 
