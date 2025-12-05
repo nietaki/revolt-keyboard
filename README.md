@@ -37,6 +37,14 @@ Current has connectors for a PSP 3000 joystick. It should be easy to create vers
 
 ## How To...
 
+### ...build the keyboard?
+
+Follow the [build video](https://www.youtube.com/watch?v=ghhF0bAFxww). You can find more support under the links [here](https://ntkstudio.net/products/revolt-keyboard/#support).
+
+### ...make the cases?
+
+The case files are available on [Printables](https://www.printables.com/model/1439208-revolt-keyboard-cases-rev1) and [Thingiverse](https://www.thingiverse.com/thing:7166363).
+
 ### ...compile the firmware?
 
 ```bash
